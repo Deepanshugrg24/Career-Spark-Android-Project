@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body bgcolor="#E8E8E8">
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img14.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="i12.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img3.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img.png" style="width:100%" height="150" width="344">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="quote1.png" style="width:100%" height="150" width="344">
+    </div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+<h1 style="text-align:center">After Intermediate(10+2) </h1>
+<p size ="15px">A student has to decide his / her career path after plus two, the final stage of their school life. Though several courses are available, opting a right career path after 12th standard is a challenging task. Most students might have already chosen their subjects for 12th grade, 
+depending on their interest of career choice. But some may be in a dilemma about 'What career to take up next after 12th?'.</p>
+
+<h3 style="text-align:center">Opprtunities for Art Stream Students</h3>
+<img src="arts.png" style="width:100%" alt=""><br>
+<h4>&nbsp&nbsp&nbspTop Universities and Institutes for this courses</h4>
+<ul>
+    <li><a href="https://www.mapsofindia.com/education/arts-colleges/">www.mapsofIndia.com</a></li>
+    <li><a href="https://collegedunia.com/arts-colleges">www.collegeduniya.com</a></li>
+    <li><a href="http://www.indiaeducation.net/top-colleges/arts-humanities/">www.indiaeducation.net</a></li>
+</ul>
+<br>
+<h3 style="text-align:center">Opprtunities for Commerce Stream Students</h3>
+<img src="commerce.png" style="width:100%" alt=""><br>
+<h4>&nbsp&nbsp&nbspTop Universities and Institutes for this courses</h4>
+
+<ul>
+    <li><a href="https://www.shiksha.com/accounting-commerce/ranking/top-commerce-colleges-in-india/97-2-0-0-0">www.shiksha.com</a></li>
+    <li><a href="https://www.mapsofindia.com/education/commerce-colleges/">www.mapsofIndia.com</a>></li>
+    <li><a href="http://trak.in/2016/top-best-20-commerce-colleges-institutes-admission-list-india/">www.track.in</a></li>
+</ul><br>
+
+<h3 style="text-align:center">Opprtunities for Science Stream Students</h3>
+<img src="chartscience.png" style="width:100%" alt=""><br><br>
+<h4>&nbsp&nbsp&nbspTop Universities and Institutes for this courses</h4>
+<ul>
+    <li><a href="https://collegedunia.com/science-colleges">www.collegeduniya.com</a></li>
+    <li><a href="https://www.shiksha.com/science/ranking/top-science-colleges-in-india/101-2-0-0-0">www.shiksha.com</a></li>
+    <li><a href="https://medicine.careers360.com/colleges/ranking">www.medicine.career360.com</a></li>
+    <li><a href="https://www.successcds.net/Top-Colleges/Medicine-MBBS-Top-25.htm">www.successcds.net</a></li>
+    <li><a href="http://www.medicalstudyguide.com/">www.medicalstudyguide.com</a></li>
+    <li><a href="http://www.rediff.com/getahead/report/career-india-today-2018s-top-20-science-colleges-in-india/20180530.htm">www.rediff.com</a></li>
+</ul>
+</body>
+
+</html>

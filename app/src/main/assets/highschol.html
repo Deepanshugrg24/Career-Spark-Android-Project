@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body bgcolor="#E8E8E8">
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img15.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="i11.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="quote6.png" style="width:100%" height="150" width="344">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img1.png" style="width:100%" height="150" width="344">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img12.png" style="width:100%" height="150" width="344">
+    </div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
+<h1 style="text-align:center"> After Class 10th</h1>
+
+
+<p size="15px">For the first time in your life, you'll have to a face a question that might haunt you all your life."What are you going to do after this ?"<br>
+    It's time to <strong>choose a stream after 10th</strong> and if you do not have an in-depth knowledge of the choice tha you have ahead of you, you might end-up
+    in a career that is not made for you. It is common among students going through this transition phase to get influenced by misinformation and end-up making wrong decision.
+</p>
+
+<h2 style="text-align:center">Opportunities after 10th</h2>
+
+<ul>
+    <li>After passing class 10th there are further choices:- <br>
+        The most common way is to go for<strong> Senior Secondory Education</strong>
+        or the students will opted various <strong> Diploma Courses</strong>.
+    </li>
+</ul>
+<h3 style="text-align:center">Senior Secondory Education(12th)</h3>
+<ul style="list-style-type:square">
+    <li>Art Stream</li>
+    <li>Commerce Stream</li>
+    <li>Science Stream</li>
+</ul>
+<h3 >&nbsp&nbsp&nbspFor More Information:-</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=EZHCvzquseg">www.youtube.com</a></li>
+    <li><a href="http://yourdost.com/blog/2015/11/career-counselling-choosing-the-right-stream-after-10th.html?q=/blog/2015/11/career-counselling-choosing-the-right-stream-after-10th.html&">www.yourdost.com</a></li>
+    <li><a href="https://www.careerindia.com/news/2013/04/23/what-are-the-career-options-after-10th-standard-004721.html">www.careerindia.com</a></li>
+    <li><a href="https://admission.aglasem.com/iit-jee-advanced-preparation/">www.admission.aglasem.com</a></li>
+</ul>
+<h3 style="text-align:center">Diploma Courses</h3>
+
+<ul style="list-style-type:square">
+    <li><u><b>Art Teacher Diploma</b></u></li>
+    <p size="15px">It is typically a 2-year program to train candidates in the fundamental principles of visual and design experience.</p>
+    <p size="15px"><b>Job Scope:</b> Arts Teacher</p>
+</ul><br>
+
+<ul style="list-style-type:square">
+    <li><u><b>Commercial Art Diploma</b></u></li>
+    <p size="15px">Commercial art, often called advertising art, helps understand nuance of selling goods and services. It is completely different from fine arts.</p>
+    <p size="15px"><b>Job Scope:</b> Art Studios, Advertising companies, Fashion houses, Publishing houses</p>
+    <p size="15px"><b>Relevant Courses:</b> Lateral entry BFA, MFA</p>
+</ul><br>
+
+<ul style="list-style-type:square">
+    <li><u><b>Engineering Diploma</b></u></li>
+    <p size="15px">It is a technical degree below the undergraduate rank which aims to enable students to understands technical communication and apply
+        basic problem solving techniques</p>
+    <p size="15px"><b>Job Scope:</b> Govt. Contractor</p>
+    <p size="15px"><b>Relevant Courses:</b> Degree Engineering, Associate membership of institute of engineers</p>
+</ul><br>
+
+<ul style="list-style-type:square">
+    <li><u><b>Diploma in Stenography</b></u></li>
+    <p size="15px">It is a one-year diploma in administrative vocational trade where candidates are equipped in taking short-hand dictations and perform clerical
+        duties</p>
+    <p size="15px"><b>Job Scope:</b>Secretary, Stenographer,Computer Operator, Clerk-cum-Typist in private and Govt. sector</p>
+</ul><br>
+
+<ul style="list-style-type:square">
+    <li><u><b> Diploma in Garment technology</b></u></li>
+    <p size="15px">It is a 3-year diploma course which equips candidates with techniques of timely delivery of merchandise & optimal resource utilization</p>
+    <p size="15px"><b>Job Scope:</b>Self Boutique and Fashion designer</p>
+</ul><br>
+
+<ul style="list-style-type:square">
+    <li><u><b>Diploma in Beauty culture & Hair dressing</b></u></li>
+    <p size="15px">Beauty care courses, ranging from 3 months to a year, impart training in body care. Job profile generally begins with traniee in beauty salons</p>
+    <p size="15px"><b>Job Scope:</b> Self Beauty saloon & Beauty Expert</p>
+</ul><br>
+<ul style="list-style-type:square">
+    <li><u><b>Diploma in Polytechnic</b></u></li>
+    <p size="15px">Diploma courses after 10th in Automobile Engineering, Civil Engineering, Computer Engineering, Electronics & Communications, Electrical Engineering, Mechanical Tool & Die Engg and Mechanical Engineering.</p>
+</ul><br>
+
+<h3>&nbsp&nbsp&nbspFor More Information:-</h3>
+<ul>
+
+<li><a href="https://www.youtube.com/watch?v=wir0OvOVY0Q">www.youtube.com</a></li>
+<li><a href="http://saytooloud.com/career-guidance/list-best-polytechnic-courses-10th/">www.saytooloud.com</a></li>
+<li><a href="http://www.indiaeducation.net/top-colleges/polytechnic/">www.indiaeducation.net</a></li>
+</ul>
+</body>
+</html>

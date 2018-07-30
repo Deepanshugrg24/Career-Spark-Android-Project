@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body bgcolor="#E8E8E8">
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img8.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="far.png" style="width:100%" height="150" width="344">
+    </div>
+
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="education.png" style="width:100%" height="150" width="344">
+    </div>
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+<h1 style="text-align:center">Others Courses</h1>
+<ul>
+    <li>Ph.d</li>
+    <li>Animatation and Cartoon Design Courses</li>
+    <li>Agriculture Courses</li>
+    <li>Zoology</li>
+    <li>Foreign Language Courses</li>
+    <li>Public Administration</li>
+    <li>Physical Education</li>
+    <li>Anthropology</li>
+    <li>Humanities</li>
+    <li>Beautician</li>
+    <li>Food Technology</li>
+    <li>Fashion Designing</li>
+    <li>Teaching</li>
+
+
+    <h3>&nbsp&nbsp&nbspFor More Information:-</h3>
+    <ul>
+
+        <li><a href="https://www.biotecnika.org/2016/04/national-level-ph-d-entrance-exams-life-science/">www.biotecnika.org</a></li>
+        <li><a href="http://www.namedu.org/phd-entrance-coaching.html">www.namedu.org</a></li>
+        <li><a href="http://www.arena-multimedia.com/courses.aspx">www.arean-multimedia.com</a></li>
+        <li><a href="http://www.maacindia.com/animation-courses.aspx">www.maacindia.com</a></li>
+        <li><a href="http://www.agrifarming.in/indian-top-agriculture-courses/">www.agriframing.in</a></li>
+        <li><a href="https://collegedunia.com/courses/bachelor-of-science-bsc-hons-zoology">www.collegeduniya.com</a></li>
+        <li><a href="https://www.successcds.net/Career/Foreign-%20Languages.html">www.successcds.net</a></li>
+        <li><a href="http://www.anchoracademy.in/foreign-language.php">www.anchoracademy.in</a></li>
+        <li><a href="https://study.com/articles/Public_Administration_Degree_Program_and_Course_Overviews.html">www.study.com</a></li>
+        <li><a href="https://www.careerindia.com/top-10-colleges-physical-education-india/articlecontent-pf2100-011970.html">www.careerindia.com</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Anthropology">www.en.wikipedia.org</a></li>
+        <li><a href="http://hss.iitd.ac.in/">www.iitd.ac.in</a></li>
+        <li><a href="https://www.oranebeautyinstitute.com/find-a-course/">www.oranebeautyinstitue.com</a></li>
+        <li><a href="https://www.sarvgyan.com/courses/engineering/food-technology">www.sarvgyan.com</a></li>
+        <li><a href="https://collegedunia.com/courses/bachelor-of-science-bsc-food-technology">www.collegedunia.com</a></li>
+        <li><a href="https://www.theopusway.com/design-colleges-2018-ranks-fees-placement-admission/">www.theopusway.com</a></li>
+        <li><a href="http://www.indiaeducation.net/careercenter/humanities/teaching/">www.indiaeduaction.net</a></li>
+    </ul>
+
+
+
+</ul>
+</body>
+
+</html>

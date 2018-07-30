@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body bgcolor="#E8E8E8">
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img13.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img6.png" style="width:100%" height="150" width="344">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img5.png" style="width:100%" height="150" width="344">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="quote5.png" style="width:100%" height="150" width="344">
+    </div>
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+<h1 style="text-align:center">After Graduation</h1>
+<p size="15px">A Masters is an advanced academic degree that takes place at postgraduate, or 'second-cycle', level, building on existing undergraduate qualifications or professional experience.
+    Different students have different reasons for studying a Masters.
+    But most do so in the hope that postgraduate study will improve their career prospects.You might have a specific job in mind –
+    such as an academic role, for which a Masters degree is often the next step.
+    Others return to postgraduate study to boost their career progress or switch career paths</p><br>
+
+<h3 style="text-align:center">Various Master Degree's</h3>
+<ul><li><a href="https://en.wikipedia.org/wiki/Master_of_Accountancy">Master of Acountancy</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Advanced_Studies">Master of Advance Study</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Finance">Master of Applied Finance</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Applied_Science">Master of Applied Science</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Architecture">Master of Architeture</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Arts">Master of Arts</a></li><br>
+    <ul><li><a href="https://en.wikipedia.org/wiki/Master_of_Arts_in_Liberal_Studies">Master of Arts in Liberal Studies</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Arts_in_Special_Education">Master of Arts in Special Education</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Arts_in_Teaching">Master of Arts in Teaching</a></li><br>
+    </ul>
+    <li><a href="https://en.wikipedia.org/wiki/List_of_masters_programs_in_bioethics">Master of Bioethics</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Business_Administration">Master of Business Administration</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Business,_Entrepreneurship_and_Technology">Master of Business,Entreneurship and Technology </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Business">Master of Business</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Business_Engineering">Master of Business Engineering</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Business_Informatics">Master of Business Informatics</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Chemistry">Master of Chemistry</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Urban_planning_education">Master of City Planning</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Commerce">Master of Commerce </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Quantitative_Finance">Master of Computational Finance</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Information_Technology">Master of Computer Application</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Counselling">Master of Counselling</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Criminal_Justice">Master of Criminal Justice</a></li><br>
+    <li>Master in Data Science</li><br>
+    <li>Master of Defence Studies</li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Design">Master of Design</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Divinity">Master of Divnity</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Economics">Master of Economics</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Education">Master of Education </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Engineering">Master of Engineering</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Engineering_Management">Master of Engineering Management </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Enterprise">Master of Enterprise </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_European_Law">Master of European Law</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Finance">Master of Finance</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Financial_Economics">Master of Financial Economics </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Quantitative_Finance">Master of Financial Engineering</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Quantitative_Finance">Master of Financial Mathematics</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Fine_Arts">Master of Fine Arts</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Health_Administration">Master of Health Administration</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Health_Science">Master of Health Science</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Humanities">Master of Humanities</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Cornell_University_School_of_Industrial_and_Labor_Relations#Graduate_programs">Master of Industrial and Labor Relation</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_International_Affairs">Master of International Affairs </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_International_Business">Master of International Business </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Economics">Master of International Economics</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_International_Studies">Master of International Studies</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Information_Management">Master of Information Management</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Information_System_Management">Master of Information System Management</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Jurisprudence">Master of Jurisprudence</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Laws">Master of Laws</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Studies_in_Law">Master of Studies in Law</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Landscape_architecture">Master of Landscape Architecture</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Letters">Master of Letters</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Arts_in_Liberal_Studies">Master of Liberal Arts</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Library_and_Information_Science">Master of Library and Information Science </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Management">Master of Management</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Quantitative_Finance">Master of Mathematical Finance</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Mathematics">Master of Mathematics</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/List_of_master%27s_degrees_in_North_America">Master of Medical Science </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Medicine">Master of Medicine</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Masters_of_Military_Art_and_Science">Master of Military Art and Science</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Music">Master of Music</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Occupational_Behaviour_and_Development">Master of Occupational Behaviour and Development</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Occupational_therapy">Master of Occupational Therapy</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Pharmacy">Master of Pharmacy</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Philosophy">Master of philosophy</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Physician_assistant">Master of Physician Assistant Studies</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Physics">Master of Physics</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Political_science#Overview">Master of Political Science</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Professional_Studies">Master of Professional Studies</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Psychology">Master of Psychology</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Public_Administration">Master of Public Administration</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Public_Affairs">Master of Public Affairs</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Professional_degrees_of_public_health">Master of Public Health</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Public_Administration">Master of Public Management</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Public_Policy">Master of Public Policy</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Mount_Saint_Vincent_University#Programs">Master of Public Relations</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Social_Work">Master of Social Work</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Clinton_School_of_Public_Service">Master of Public Service</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Quantitative_Finance">Master of Quantative Finance</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Rabbinic_Studies">Master of Rabbinic Studies</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Graduate_real_estate_education">Master of Real Estate Development</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Religious_Education">Master of Religious Education</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Research">Master of Research</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Sacred_Music">Master of Sacred Music</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Sacred_Theology">Master of Sacred Theology</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Science">Master of Science</a></li><br>
+    <ul><li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Administration">Master of Science in Administration</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Bioinformatics">Master of Science in Bioinformatics</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/List_of_master%27s_degrees_in_North_America#Computer_Science">Master of Science in Computer Science</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Counselling">Master of Science in Counselling</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Cyber_Security">Master of Cyber Security</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Engineering">Master of Science in Enginerring</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Development_Administration">Master of Science in Development Administration</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Finance">Master of Science in Finance</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Health_Informatics">Master of Science in Health Informatics </a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Human_Resource_Development">Master of Science in Human Resource Development</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Information_Assurance">Master of Science in Information Assurance</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Information_Systems">Master of Science in Information Systems</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Information_Technology">Master of Science in Information Technology</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Leadership">Master of Science in Leadership</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Management">Master of Science in Management</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Nursing">Master of Science in Nursing</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Project_Management">Master of Science in Project Management</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science_in_Supply_Chain_Management">Master of Science in Supply Chain Management</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Arts_in_Teaching">Master of Science in Teaching</a></li><br>
+        <li><a href="https://en.wikipedia.org/wiki/Master_of_Science">Master of Science in Taxation</a></li><br>
+    </ul>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Social_Science">Master of Social Science</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Social_Work">Master of Social Work</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Studies">Master of Studies</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Surgery">Master of Surgery </a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Theological_Studies">Master of Theological studies</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Urban_planning_education">Master of Urban Planning</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Veterinary_Science">Master of Veterinary science</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Worship_studies">Master of Worship studies</a></li><br>
+    <li><a href="https://en.wikipedia.org/wiki/Master_of_Water_security">Master of Water security</a></li><br>
+</ul>
+</body>
+</html>

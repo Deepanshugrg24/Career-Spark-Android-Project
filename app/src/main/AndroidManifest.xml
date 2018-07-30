@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.kiet.guidelineapp.guidelineapps">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logocareer"
+        android:label="@string/careerspark"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FlashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="After Class 10th ?"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AftreIntermediate"
+            android:label="After Intermediate ?"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AfterGraduation"
+            android:label="After Graduation ?"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EntranceTest"
+            android:label="Entrance Exams"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OthersCourses"
+            android:label="Other Courses"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BankCivil"
+            android:label="Bank and Civil Services"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SSC"
+            android:label="SSC"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Coaching"
+            android:label="Preparation Support"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tab1" />
+        <activity android:name=".About"
+            android:label="About Us"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
